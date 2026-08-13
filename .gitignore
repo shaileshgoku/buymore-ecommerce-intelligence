@@ -1,0 +1,59 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# Environment / secrets
+.env
+.env.*
+!.env.example
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Generated / large data
+data/raw/
+data/processed/
+data/gold/
+
+*.parquet
+*.zip
+
+# Ignore generated CSVs, but keep sample CSVs
+data/**/*.csv
+!data/sample/
+!data/sample/*.csv
+
+# Spark
+spark-warehouse/
+metastore_db/
+derby.log/
+
+# Logs
+*.log
+logs/
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Python build
+build/
+dist/
+*.egg-info/
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
